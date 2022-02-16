@@ -1,0 +1,117 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    --background-color-: linear-gradient(rgb(92, 4, 133), rgb(50, 2, 138));
+    --background-glass-: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    --border-radius--: 15px;
+    --border--:1px solid rgba(255,255,255,0.18);
+    --box-shadow--: 0 0 0.5em rgba(255,255,255,0.37);
+    color: white;
+}
+
+body{
+    background: var(--background-color-);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    z-index: 1;
+}
+
+.logo{
+     width:60px;
+ }
+
+ .about-me .container, .projects .container, .skills-containers, form{
+     background-image: var(--background-glass-) ;
+     /* backdrop-filter: blur(10px); */
+     border: var(--border--);
+     border-radius: var(--border-radius--);
+     box-shadow: var(--box-shadow--);
+ }
+ 
+
+ p{
+     color: white;
+ }
+
+ .about-img{
+     width:50%;
+     height: 100%;
+ }
+
+ .guiguihome-img, .vintage-img{
+     border-radius: 20px;
+ }
+ .software,.skillsimg,.contact-img{
+     width: 400px;
+ }
+ 
+ .skills-containers{
+     width: 150px;
+ }
+
+ .grid-container{
+     
+     display: grid;
+     grid-template-columns:repeat(2,1fr);
+     grid-template-rows:repeat(6,1fr);
+     row-gap: 50px;
+     align-items: center;
+     
+     justify-items: center;
+ }
+
+ .form-group{
+     width: 100%;
+ }
+ .form-group input, .form-group textarea{
+     background: var(--background-glass-);
+     border-radius: var(--border-radius--);
+     padding:10px;
+     border: var(--border--);
+     box-shadow: var(--box-shadow--);
+     color: white;
+ }
+
+ button[type="submit"]{
+     border-radius: var(--border-radius--);
+     padding: 10px;
+     margin: 20px;
+     font-size: 1.4rem;
+     background: var(--background-glass-);
+     border: var(--border--);
+     box-shadow: var(--box-shadow--);
+     color: white;
+     transition: background-color ease-in 200ms;
+ }
+
+ button[type="submit"]:hover{
+     background-color: blueviolet;
+ }
+
+
+ div.icon-container>*, div.grid-container > *{
+     transition: transform ease-in 100ms;
+     color: white;
+     text-decoration: none;
+ }
+ div.icon-container>*:hover, div.grid-container>*{
+     transform: scale(1.2);
+     color: white;
+ }
+
+ 
+
+ @media screen and (min-width:992px){
+     .software,.skillsimg,.contact-img{
+         width: 700px;
+     }
+     .grid-container{
+         width: 50%;
+         margin: auto;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:repeat(4,1fr);
+     }
+ }
+
