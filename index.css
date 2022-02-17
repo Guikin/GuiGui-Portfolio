@@ -17,21 +17,42 @@ body{
 .navbar{
     z-index: 1;
 }
+#navmenu li{
+    transition: background-color ease-in 300ms;
+    border-radius: var(--border-radius--);
+}
+
+.background-col{
+    background-color: rgba(75, 4, 133, 0.95);
+}
+
+nav{
+    transition: background-color ease-in 300ms;
+}
 
 .logo{
      width:60px;
  }
 
- .about-me .container, .projects .container, .skills-containers, form{
+ .text-container h1{
+     animation: fade-in ease-in 2s;
+ }
+ .text-container h2{
+    animation: fade-in ease-in 4s;
+}
+.hero img{
+    animation: fade-in ease-in 2s;
+}
+
+
+.about-me .container, .projects .container, .skills-containers, form{
      background-image: var(--background-glass-) ;
-     /* backdrop-filter: blur(10px); */
      border: var(--border--);
      border-radius: var(--border-radius--);
      box-shadow: var(--box-shadow--);
  }
- 
 
- p{
+p{
      color: white;
  }
 
@@ -58,7 +79,6 @@ body{
      grid-template-rows:repeat(6,1fr);
      row-gap: 50px;
      align-items: center;
-     
      justify-items: center;
  }
 
@@ -86,20 +106,39 @@ body{
      transition: background-color ease-in 200ms;
  }
 
- button[type="submit"]:hover{
+ button[type="submit"]:hover, #navmenu li:hover{
      background-color: blueviolet;
  }
 
 
- div.icon-container>*, div.grid-container > *{
+ div.icon-container>*, div.grid-container>*{
      transition: transform ease-in 100ms;
      color: white;
      text-decoration: none;
  }
- div.icon-container>*:hover, div.grid-container>*{
+ div.icon-container>*:hover, div.grid-container>*:hover{
      transform: scale(1.2);
      color: white;
  }
+
+
+.faders{
+    opacity:0;
+    transition:opacity 500ms ease-in
+}
+
+.faders.appear{
+    opacity: 1;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
  
 
