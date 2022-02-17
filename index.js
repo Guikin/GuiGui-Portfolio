@@ -1,7 +1,7 @@
 const faders = document.querySelectorAll(".faders")
 
 const Options= {
-    threshold:.5,
+    threshold:.45,
 }
 
 const sectionTwoObserver = new IntersectionObserver(function(entries,sectionTwoObserver){
