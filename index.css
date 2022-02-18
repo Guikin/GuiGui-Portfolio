@@ -61,7 +61,7 @@ p{
      height: 100%;
  }
 
- .guiguihome-img, .vintage-img{
+ .guiguihome-img, .vintage-img, .Choordoor-img, .Colmar-img{
      border-radius: 20px;
  }
  .software,.skillsimg,.contact-img{
@@ -94,7 +94,7 @@ p{
      color: white;
  }
 
- button[type="submit"]{
+ button[type="submit"],.live-webs{
      border-radius: var(--border-radius--);
      padding: 10px;
      margin: 20px;
