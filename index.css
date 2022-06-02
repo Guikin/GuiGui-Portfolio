@@ -106,7 +106,7 @@ p{
      transition: background-color ease-in 200ms;
  }
 
- button[type="submit"]:hover, #navmenu li:hover{
+ button[type="submit"]:hover, #navmenu li:hover,.live-webs:hover{
      background-color: blueviolet;
  }
 
