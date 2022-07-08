@@ -152,9 +152,11 @@ p{
         grid-template-columns:repeat(3,1fr);
         grid-template-rows:repeat(4,1fr);
      }
-     .project-img,.projects-link img{
-        width: none;
+     .projects-link img{
+        width: 250px;
      }
-     
+     .project-img{
+        width: 600px;
+     }
  }
 
