@@ -82,7 +82,7 @@ p{
      justify-items: center;
  }
 
- .form-group{
+ .form-group,.project-img,.projects-link img{
      width: 100%;
  }
  .form-group input, .form-group textarea{
@@ -152,5 +152,9 @@ p{
         grid-template-columns:repeat(3,1fr);
         grid-template-rows:repeat(4,1fr);
      }
+     .project-img,.projects-link img{
+        width: none;
+     }
+     
  }
 
